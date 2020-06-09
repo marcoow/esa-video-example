@@ -1,0 +1,8 @@
+<h1>Inbox</h1>
+
+<dl>
+  {{#each @model as |message|}}
+    <dt>{{message.sender}} at {{format-date message.sentAt}}: <strong>{{message.subject}}</strong></dt>
+    <dd>{{message.body}}</dd>
+  {{/each}}
+</dl>
