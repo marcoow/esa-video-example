@@ -3,7 +3,7 @@
     <li><LinkTo @route="index">Home</LinkTo></li>
     <li><LinkTo @route="inbox">Inbox</LinkTo></li>
     {{#if session.isAuthenticated}}
-      <li><button type="button" {{on "click" this.logout}}>Logout</button></li>
+      <li><button type="button" {{on "click" this.logout}}>Logout {{session.user.name}}</button></li>
     {{/if}}
   </ul>
 </nav>
