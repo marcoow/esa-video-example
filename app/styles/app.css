@@ -1,0 +1,25 @@
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+nav ul li {
+  float: left;
+  margin-right: 2rem;
+}
+
+nav ul li:nth-child(3) {
+  float: right;
+  margin-right: 0;
+}
+
+dl dd {
+  margin-bottom: 2rem;
+}
+
+form input {
+  margin-bottom: 1rem;
+}
