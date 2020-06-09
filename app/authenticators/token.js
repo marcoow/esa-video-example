@@ -1,7 +1,13 @@
 import Base from 'ember-simple-auth/authenticators/base';
 
 export default Base.extend({
-  restore(data) {
+  async restore(data) {
+    let { token } = data;
+    if (token) {
+      return data;
+    } else {
+      throw 'no valid session data';
+    }
   },
 
   async authenticate(username, password) {
